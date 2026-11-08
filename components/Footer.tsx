@@ -9,7 +9,7 @@ export default function Footer() {
             href="https://www.gdevsoftware.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium text-blue-600 hover:text-blue-700"
+            className="font-medium text-blue-900 hover:text-blue-700"
           >
             GDEV
           </a>

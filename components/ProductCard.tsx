@@ -8,7 +8,7 @@ type ProductCardProps = {
 
 export default function ProductCard({ title, image, description }: ProductCardProps) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
+    <article className="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
       <div className="relative aspect-[4/3] w-full bg-gray-50">
         <Image
           src={image}
@@ -25,7 +25,7 @@ export default function ProductCard({ title, image, description }: ProductCardPr
         ) : null}
         <button
           type="button"
-          className="mt-auto rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+          className="mt-auto rounded-full bg-red-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-red-700"
         >
           Cotizar
         </button>
