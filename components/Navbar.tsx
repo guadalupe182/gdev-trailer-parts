@@ -14,6 +14,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link href="/nosotros" className="transition-colors hover:text-zinc-900 dark:hover:text-white">
+              Nosotros
+            </Link>
+          </li>
+          <li>
             <Link href="#productos" className="transition-colors hover:text-zinc-900 dark:hover:text-white">
               Productos
             </Link>
