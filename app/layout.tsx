@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gdev Trailer Parts",
-  description: "Refacciones para trailers",
+  title: "Refaccionaria El Compañero",
+  description: "Encuentra las mejores refacciones para tu tráiler. Calidad garantizada y envíos a todo el país.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-gray-50 text-gray-900">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

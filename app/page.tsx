@@ -10,60 +10,62 @@ const products = [
 export default function Home() {
   return (
     <>
-      <section className="relative flex min-h-[calc(100vh-8rem)] items-center justify-center overflow-hidden bg-gradient-to-b from-zinc-50 to-white px-6 py-24 dark:from-zinc-950 dark:to-black">
+      <section className="flex min-h-[calc(100vh-8rem)] items-center justify-center bg-white px-6 py-24">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="mb-4 inline-block rounded-full border border-zinc-200 bg-white px-4 py-1 text-sm font-medium text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300">
-            Calidad y durabilidad
+          <span className="mb-4 inline-block rounded-full border border-blue-100 bg-blue-50 px-4 py-1 text-sm font-medium text-blue-700">
+            Calidad garantizada
           </span>
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-6xl dark:text-zinc-50">
-            Refacciones para Trailers
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            Refaccionaria El Compañero
           </h1>
-          <p className="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Encuentra los repuestos que tu trailer necesita. Atención personalizada y
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Encuentra las mejores refacciones para tu tráiler. Calidad garantizada y
             envíos a todo el país.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-4">
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="#contacto"
-              className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
+              className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
             >
-              Contacto
+              Cotizar ahora
             </a>
             <a
               href="#catalogo"
-              className="rounded-full border border-zinc-300 px-6 py-3 text-sm font-semibold text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-50 dark:hover:bg-zinc-900"
+              className="rounded-full border border-gray-300 px-6 py-3 text-sm font-semibold text-gray-900 transition-colors hover:bg-gray-100"
             >
-              Ver catálogo
+              Ver Catálogo
             </a>
           </div>
         </div>
       </section>
 
-      <section id="catalogo" className="mx-auto max-w-6xl px-6 py-20">
-        <div className="mb-10 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-            Catálogo
-          </h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-            Refacciones seleccionadas para tu trailer.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {products.map((product) => (
-            <ProductCard key={product.title} {...product} />
-          ))}
+      <section id="catalogo" className="bg-white px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              Catálogo
+            </h2>
+            <p className="mt-3 text-gray-600">
+              Refacciones seleccionadas para tu trailer.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {products.map((product) => (
+              <ProductCard key={product.title} {...product} />
+            ))}
+          </div>
         </div>
       </section>
 
       <section id="contacto" className="mx-auto max-w-6xl px-6 py-20">
-        <div className="rounded-2xl bg-zinc-900 px-8 py-12 text-center text-white dark:bg-zinc-800">
+        <div className="rounded-2xl bg-blue-600 px-8 py-12 text-center text-white">
           <h2 className="text-2xl font-bold">¿Necesitas una cotización?</h2>
-          <p className="mt-3 text-zinc-300">
+          <p className="mt-3 text-blue-100">
             Contáctanos y te ayudamos a encontrar la refacción ideal.
           </p>
           <a
-            href="mailto:contacto@gdevtrailerparts.com"
-            className="mt-6 inline-block rounded-full bg-white px-6 py-3 text-sm font-semibold text-zinc-900 transition-colors hover:bg-zinc-200"
+            href="mailto:contacto@refaccionariaelcompanero.com"
+            className="mt-6 inline-block rounded-full bg-white px-6 py-3 text-sm font-semibold text-blue-600 transition-colors hover:bg-blue-50"
           >
             Enviar correo
           </a>
